@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vtech Motors is a premium luxury car dealership offering sedans, SUVs, sports cars, electric vehicles, and supercars.">
+  <title>Vtech Motors | Luxury Car Dealership</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header: fixed navigation with desktop actions and accessible mobile controls. -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="Vtech Motors home">
+        <span class="logo__mark" aria-hidden="true">V</span>
+        <span class="logo__text">Vtech <strong>Motors</strong></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#collection">Luxury Collection</a>
+        <a href="#services">Services</a>
+        <a href="#financing">Financing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button" type="button" aria-label="Search inventory">
+          <span class="search-icon" aria-hidden="true"></span>
+        </button>
+        <a class="header__phone" href="tel:+2348068578671">+234 806 857 8671</a>
+        <a class="btn btn--small btn--gold" href="#contact">Book Appointment</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu: slide-in drawer with overlay, focusable links, and close button. -->
+  <div class="menu-overlay" id="menuOverlay" hidden></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="logo" href="#home">
+        <span class="logo__mark" aria-hidden="true">V</span>
+        <span class="logo__text">Vtech <strong>Motors</strong></span>
+      </a>
+      <button class="icon-button" id="menuClose" type="button" aria-label="Close navigation menu">x</button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <a href="#home">Home</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#collection">Luxury Collection</a>
+      <a href="#services">Services</a>
+      <a href="#financing">Financing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--gold btn--block" href="#contact">Book Appointment</a>
+  </aside>
+
+  <main id="main">
+    <!-- Hero: first-viewport brand promise with image, animated copy, and proof stats. -->
+    <section class="hero section-dark" id="home" aria-label="Luxury dealership introduction">
+      <img class="hero__image" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=85" alt="Black Porsche sports car parked on a mountain road" loading="eager">
+      <div class="hero__shade"></div>
+      <div class="container hero__content">
+        <p class="eyebrow animate fade-down">Curated prestige automobiles</p>
+        <h1 class="typing-text animate fade-up">Drive Luxury Beyond Expectations</h1>
+        <p class="hero__lead animate fade-up delay-1">Discover hand-selected luxury sedans, SUVs, sports cars, electric vehicles, and supercars with white-glove service from first viewing to final delivery.</p>
+        <div class="hero__buttons animate fade-up delay-2">
+          <a class="btn btn--gold" href="#inventory">Explore Inventory</a>
+          <a class="btn btn--glass" href="#contact">Book Test Drive</a>
+        </div>
+        <div class="hero__stats glass-panel animate zoom-in delay-3" aria-label="Dealership highlights">
+          <div class="hero__stats-track">
+            <div><strong>500+</strong><span>Luxury Cars</span></div>
+            <div><strong>15+</strong><span>Brands</span></div>
+            <div><strong>25 Years</strong><span>Experience</span></div>
+            <div aria-hidden="true"><strong>500+</strong><span>Luxury Cars</span></div>
+            <div aria-hidden="true"><strong>15+</strong><span>Brands</span></div>
+            <div aria-hidden="true"><strong>25 Years</strong><span>Experience</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#inventory" aria-label="Scroll to inventory"><span></span></a>
+    </section>
+
+    <!-- Inventory: reusable cards with real models, specs, pricing, and hover interactions. -->
+    <section class="section inventory" id="inventory">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Featured inventory</p>
+          <h2>Exceptional vehicles, meticulously selected.</h2>
+          <p>Every listing is inspected, verified, and prepared for clients who expect precision in every detail.</p>
+        </div>
+
+        <div class="vehicle-grid">
+          <article class="vehicle-card reveal fade-up">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=900&q=80" alt="Mercedes-Benz S-Class luxury sedan" loading="lazy">
+              <span class="badge">Sedan</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>Mercedes-Benz S-Class</h3><strong>$118,900</strong></div>
+              <p>2025 S 580 4MATIC</p>
+              <div class="spec-grid">
+                <span>496 HP</span><span>V8 Biturbo</span><span>Gasoline</span><span>1,240 mi</span><span>9-Speed Auto</span><span>5.0 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card reveal fade-up delay-1">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80" alt="BMW 7 Series premium black sedan" loading="lazy">
+              <span class="badge">Executive</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>BMW 7 Series</h3><strong>$106,500</strong></div>
+              <p>2025 760i xDrive</p>
+              <div class="spec-grid">
+                <span>536 HP</span><span>4.4L V8</span><span>Gasoline</span><span>980 mi</span><span>8-Speed Auto</span><span>4.9 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card reveal fade-up delay-2">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=900&q=80" alt="Audi RS7 performance car" loading="lazy">
+              <span class="badge">Sportback</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>Audi RS7 Performance</h3><strong>$132,300</strong></div>
+              <p>2025 quattro Tiptronic</p>
+              <div class="spec-grid">
+                <span>621 HP</span><span>Twin-Turbo V8</span><span>Gasoline</span><span>760 mi</span><span>8-Speed Auto</span><span>5.0 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card reveal fade-up">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1611651338412-8403fa6e3599?auto=format&fit=crop&w=900&q=80" alt="Porsche 911 sports coupe" loading="lazy">
+              <span class="badge">Sports Car</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>Porsche 911 Carrera</h3><strong>$146,800</strong></div>
+              <p>2025 Carrera 4 GTS</p>
+              <div class="spec-grid">
+                <span>532 HP</span><span>3.6L Hybrid</span><span>Hybrid</span><span>430 mi</span><span>PDK</span><span>5.0 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card reveal fade-up delay-1">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=900&q=80" alt="Ferrari Roma red grand touring car" loading="lazy">
+              <span class="badge">Supercar</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>Ferrari Roma</h3><strong>$247,900</strong></div>
+              <p>2024 Coupe</p>
+              <div class="spec-grid">
+                <span>612 HP</span><span>3.9L V8</span><span>Gasoline</span><span>1,520 mi</span><span>8-Speed DCT</span><span>4.9 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card reveal fade-up delay-2">
+            <div class="vehicle-card__media">
+              <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=900&q=80" alt="Tesla Model S electric luxury sedan" loading="lazy">
+              <span class="badge">Electric</span>
+            </div>
+            <div class="vehicle-card__body">
+              <div class="vehicle-card__title"><h3>Tesla Model S Plaid</h3><strong>$91,400</strong></div>
+              <p>2025 Tri Motor AWD</p>
+              <div class="spec-grid">
+                <span>1,020 HP</span><span>Tri Motor</span><span>Electric</span><span>620 mi</span><span>Single-Speed</span><span>4.8 Rating</span>
+              </div>
+              <button class="btn btn--outline ripple" type="button">View Details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand logos: text-based marks keep the section fast and accessible. -->
+    <section class="section brands section-compact" aria-label="Luxury brands">
+      <div class="container brand-strip reveal fade-up">
+        <div class="brand-strip__track">
+          <span>BMW</span><span>Mercedes</span><span>Audi</span><span>Porsche</span><span>Ferrari</span><span>Lamborghini</span><span>Lexus</span><span>Tesla</span>
+          <span aria-hidden="true">BMW</span><span aria-hidden="true">Mercedes</span><span aria-hidden="true">Audi</span><span aria-hidden="true">Porsche</span><span aria-hidden="true">Ferrari</span><span aria-hidden="true">Lamborghini</span><span aria-hidden="true">Lexus</span><span aria-hidden="true">Tesla</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us: icon cards summarize trust signals and dealership benefits. -->
+    <section class="section why-us">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Why choose us</p>
+          <h2>A private-client standard of service.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal slide-left"><span>OK</span><h3>Certified Vehicles</h3><p>Multi-point inspections, verified histories, and provenance support.</p></article>
+          <article class="feature-card reveal fade-up"><span>$</span><h3>Financing</h3><p>Discreet lending relationships and flexible premium payment structures.</p></article>
+          <article class="feature-card reveal slide-right"><span>W</span><h3>Warranty</h3><p>Extended protection plans tailored for high-performance vehicles.</p></article>
+          <article class="feature-card reveal slide-left"><span>VIP</span><h3>Luxury Experience</h3><p>Private viewings, test drives, and white-glove handover appointments.</p></article>
+          <article class="feature-card reveal fade-up"><span>TI</span><h3>Trade-In</h3><p>Market-led valuations for exotic, executive, and collector vehicles.</p></article>
+          <article class="feature-card reveal slide-right"><span>WD</span><h3>Worldwide Delivery</h3><p>Enclosed transport, export documentation, and concierge logistics.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection showcase: alternating editorial blocks for key dealership categories. -->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="showcase reveal fade-up">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1100&q=85" alt="Lamborghini supercar in a modern city setting" loading="lazy">
+          <div>
+            <p class="eyebrow">Supercar collection</p>
+            <h2>Engineered drama, curated with restraint.</h2>
+            <p>From Lamborghini Huracan to Ferrari Roma, our supercar portfolio is selected for condition, rarity, specification, and ownership experience.</p>
+            <a class="btn btn--gold" href="#contact">Schedule Private Viewing</a>
+          </div>
+        </div>
+        <div class="showcase showcase--reverse reveal fade-up">
+          <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=1100&q=85" alt="Rolls-Royce luxury car grille and hood ornament" loading="lazy">
+          <div>
+            <p class="eyebrow">Executive collection</p>
+            <h2>Quiet power for clients who value presence.</h2>
+            <p>Discover Rolls-Royce Ghost, Lexus LS, Mercedes-Maybach, and flagship SUVs prepared for business, travel, and ceremony.</p>
+            <a class="btn btn--outline" href="#inventory">Browse Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: concise service catalog built as responsive cards. -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Services</p>
+          <h2>Everything around the vehicle, handled.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal fade-up"><h3>Luxury Sales</h3><p>Curated purchase guidance across sedans, SUVs, EVs, sports cars, and supercars.</p></article>
+          <article class="service-card reveal fade-up"><h3>Vehicle Financing</h3><p>Competitive lending, lease structures, and private approval support.</p></article>
+          <article class="service-card reveal fade-up"><h3>Trade-In</h3><p>Transparent valuations supported by current luxury-market demand.</p></article>
+          <article class="service-card reveal fade-up"><h3>Maintenance</h3><p>Trusted specialist partners for scheduled care and performance service.</p></article>
+          <article class="service-card reveal fade-up"><h3>Insurance</h3><p>Connections to providers familiar with exotic and collector vehicles.</p></article>
+          <article class="service-card reveal fade-up"><h3>Car Detailing</h3><p>Paint correction, ceramic coating, interior restoration, and delivery prep.</p></article>
+          <article class="service-card reveal fade-up"><h3>VIP Concierge</h3><p>Private sourcing, enclosed delivery, registration, and ownership support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics: counters animate once when the section enters the viewport. -->
+    <section class="stats-band section-dark">
+      <div class="container stats-grid reveal zoom-in">
+        <div><strong class="counter" data-target="500" data-suffix="+">0</strong><span>Cars Sold</span></div>
+        <div><strong class="counter" data-target="98" data-suffix="%">0</strong><span>Satisfied Clients</span></div>
+        <div><strong class="counter" data-target="30" data-suffix="+">0</strong><span>Luxury Brands</span></div>
+        <div><strong class="counter" data-target="25" data-suffix=" Years">0</strong><span>Experience</span></div>
+      </div>
+    </section>
+
+    <!-- Testimonials: vanilla JS carousel with autoplay and manual controls. -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal fade-up">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Trusted by exacting clients.</h2>
+        </div>
+        <div class="testimonial-slider reveal fade-up" role="region" aria-label="Testimonials carousel" aria-roledescription="carousel">
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=220&q=80" alt="Portrait of client Olivia Bennett" loading="lazy">
+              <p>"The S-Class was prepared flawlessly, and the private delivery felt effortless."</p>
+              <h3>Olivia Bennett</h3><span>Managing Partner | Mercedes S-Class</span><strong>5.0 / 5.0</strong>
+            </article>
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=220&q=80" alt="Portrait of client Marcus Hale" loading="lazy">
+              <p>"Their team sourced the exact 911 specification I wanted within two weeks."</p>
+              <h3>Marcus Hale</h3><span>Architect | Porsche 911</span><strong>5.0 / 5.0</strong>
+            </article>
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=220&q=80" alt="Portrait of client Nadia Laurent" loading="lazy">
+              <p>"Transparent financing, elegant showroom, and a concierge-level handover."</p>
+              <h3>Nadia Laurent</h3><span>Founder | Ferrari Roma</span><strong>5.0 / 5.0</strong>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button class="icon-button" id="testimonialPrev" type="button" aria-label="Previous testimonial">&lt;</button>
+            <button class="icon-button" id="testimonialNext" type="button" aria-label="Next testimonial">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Financing: conversion section for lending benefits and application CTA. -->
+    <section class="section financing" id="financing">
+      <div class="container financing__inner reveal fade-up">
+        <div>
+          <p class="eyebrow">Financing</p>
+          <h2>Flexible luxury financing, made simple.</h2>
+          <p>Access low-interest options, discreet approvals, flexible terms, and payment structures designed for premium vehicles.</p>
+        </div>
+        <a class="btn btn--gold" href="#contact">Apply for Financing</a>
+      </div>
+    </section>
+
+    <!-- CTA: high-contrast closing prompt with two clear actions. -->
+    <section class="cta section-dark">
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1800&q=85" alt="Luxury sports car interior and steering wheel" loading="lazy">
+      <div class="container cta__content reveal zoom-in">
+        <h2>Your next luxury vehicle deserves a private introduction.</h2>
+        <div class="hero__buttons">
+          <a class="btn btn--gold" href="#contact">Book Appointment</a>
+          <a class="btn btn--glass" href="tel:+2348068578671">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: split layout combines dealership details with a practical inquiry form. -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal slide-left">
+          <p class="eyebrow">Contact</p>
+          <h2>Visit the private showroom.</h2>
+          <ul>
+            <li><strong>Address</strong><span>No 123, Code Avenue, Somewhere Around the World.</span></li>
+            <li><strong>Phone</strong><a href="tel:+2348068578671">+234 806 857 8671</a></li>
+            <li><strong>Email</strong><a href="mailto:vtechs24@gmail.com">vtechs24@gmail.com</a></li>
+            <li><strong>Hours</strong><span>Mon-Sat: 9:00 AM - 7:00 PM</span></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal slide-right" aria-label="Contact form">
+          <label>Name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Vehicle Interested In<input type="text" name="vehicle" placeholder="Ferrari Roma, Tesla Model S Plaid..."></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn--gold ripple" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: multi-column sitemap, newsletter, policies, social links, and back-to-top. -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="#home"><span class="logo__mark">V</span><span class="logo__text">Vtech <strong>Motors</strong></span></a><p>Elite vehicles, discreet advisory, and white-glove ownership support.</p></div>
+      <div><h3>Quick Links</h3><a href="#inventory">Inventory</a><a href="#collection">Collection</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+      <div><h3>Inventory</h3><a href="#inventory">Luxury Sedans</a><a href="#inventory">SUVs</a><a href="#inventory">Sports Cars</a><a href="#inventory">Electric Vehicles</a><a href="#inventory">Supercars</a></div>
+      <div><h3>Services</h3><a href="#financing">Financing</a><a href="#services">Trade-In</a><a href="#services">Maintenance</a><a href="#services">VIP Concierge</a></div>
+      <div><h3>Newsletter</h3><p>Receive private inventory previews.</p><form class="newsletter"><input type="email" aria-label="Email address" placeholder="Email address"><button class="btn btn--small btn--gold" type="submit">Join</button></form></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Vtech Motors. All rights reserved.</p>
+      <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/scroll-effects.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

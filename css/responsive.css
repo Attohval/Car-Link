@@ -1,0 +1,256 @@
+/*
+  Responsive stylesheet
+  Purpose: Layout adjustments for laptop, tablet, and mobile breakpoints.
+  Behavior: Navigation switches to drawer at 1024px and grids collapse progressively.
+*/
+
+@media (max-width: 1280px) {
+  .desktop-nav {
+    max-width: 640px;
+    font-size: 0.8rem;
+  }
+
+  .desktop-nav a {
+    padding-inline: 8px;
+  }
+
+  .header__phone {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .desktop-nav {
+    max-width: 600px;
+  }
+
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-strip__track {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 76px;
+  }
+
+  .desktop-nav,
+  .header__actions > .btn,
+  .header__actions > .icon-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .section {
+    padding: 88px 0;
+  }
+
+  .feature-grid,
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .showcase,
+  .showcase--reverse {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .showcase--reverse img {
+    order: 0;
+  }
+
+  .contact__grid,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .reveal.slide-left,
+  .reveal.slide-right {
+    transform: translateY(34px);
+  }
+
+  .hero__stats {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 98px;
+    overflow: hidden;
+  }
+
+  .hero__stats-track {
+    position: absolute;
+    inset: 0 auto 0 0;
+    display: flex;
+    width: auto;
+    gap: 0;
+    animation: heroStatsMarquee 18s linear infinite;
+  }
+
+  .hero__stats-track div,
+  .hero__stats-track div[aria-hidden="true"] {
+    display: grid;
+    align-content: center;
+    flex: 0 0 174px;
+    border-right: 1px solid var(--color-line);
+  }
+
+  .hero__stats-track div:nth-child(3) {
+    border-right: 1px solid var(--color-line);
+  }
+
+  .brand-strip {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .brand-strip__track {
+    position: absolute;
+    inset: 0 auto 0 0;
+    display: flex;
+    width: auto;
+    gap: 12px;
+    animation: brandMarquee 24s linear infinite;
+  }
+
+  .brand-strip span,
+  .brand-strip span[aria-hidden="true"] {
+    display: grid;
+    flex: 0 0 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 16vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__content {
+    padding: 56px 0 100px;
+  }
+
+  .hero__lead {
+    font-size: 1rem;
+  }
+
+  .hero__buttons,
+  .newsletter,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__stats,
+  .stats-grid,
+  .vehicle-grid,
+  .feature-grid,
+  .service-grid,
+  .contact__grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats div,
+  .stats-grid div {
+    border-right: 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .hero__stats-track div,
+  .hero__stats-track div[aria-hidden="true"] {
+    border-right: 1px solid var(--color-line);
+    border-bottom: 0;
+  }
+
+  .hero__stats div:last-child,
+  .stats-grid div:last-child {
+    border-bottom: 0;
+  }
+
+  .vehicle-card__title {
+    display: grid;
+    gap: 2px;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+
+  .testimonial-card p {
+    font-size: 1.2rem;
+  }
+
+  .financing__inner {
+    display: grid;
+    padding: 28px;
+  }
+
+  .contact__info,
+  .contact-form {
+    padding: 24px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo__text {
+    display: none;
+  }
+
+  .mobile-menu .logo__text {
+    display: inline;
+  }
+
+  .brand-strip__track {
+    animation-duration: 20s;
+  }
+
+  .hero__stats-track {
+    animation-duration: 15s;
+  }
+
+  .brand-strip span,
+  .brand-strip span[aria-hidden="true"] {
+    flex-basis: 138px;
+  }
+
+  .btn {
+    width: 100%;
+    padding-inline: 16px;
+  }
+}
