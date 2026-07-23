@@ -350,7 +350,6 @@ p {
 
 .desktop-nav a:hover,
 .desktop-nav a.is-active {
-  background: rgba(215, 173, 87, 0.12);
   color: var(--color-white);
 }
 
